@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include "behaviors.dtsi"
 
 / {
     chosen {
@@ -42,9 +41,9 @@
 // DONE
                 symbol_layer {
                         bindings = <
-   &ks GRAVE CARET      &ks DOLLAR UGBP         &ks MINUS UNDER         &ks EQUAL PLUS          &ks ASTRK PRCNT         &none   &none           &none           &none           &none
-   &ks LT GT            &ks LBKT RBKT           &ks LBRC RBRC           &ks LPAR RPAR           &ks FSLH BSLH           &none   &kp RCTRL       &kp RSHFT       &kp RALT        &kp RGUI
-   &ks COLON TILDE      &ks AMPS PIPE           &ks SQT DQT             &ks EXCL QMARK          &ks AT HASH             &none   &none           &none           &none           &none
+   &kp GRAVE    &kp DOLLAR      &kp MINUS       &kp EQUAL       &kp ASTRK       &kp PRCNT       &kp PLUS        &kp UNDER       &kp UGBP        &kp CARET
+   &mt LGUI LT  &mt LALT LBKT   &mt LSHFT LBRC  &mt LCTRL LPAR  &kp FSLH        &kp BSLH        &mt RCTRL RPAR  &mt RSHFT RBRC  &mt RALT RBKT   &mt RGUI GT
+   &kp COLON    &kp AMPS        &kp SQT         &kp EXCL        &kp AT          &kp HASH        &kp QMARK       &kp DQT         &kp PIPE        &kp TILDE
                                                         &trans    &trans    &trans   &trans   &trans   &trans
                         >;
                 };
