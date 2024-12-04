@@ -7,9 +7,12 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include "behaviors.dtsi"
 
 / {
-    chosen { zmk,matrix_transform = &five_column_transform; };
+    chosen {
+        zmk,physical-layout = &foostan_corne_5col_layout;
+    };
 };
 
 / {

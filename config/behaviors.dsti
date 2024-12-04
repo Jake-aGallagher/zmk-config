@@ -1,0 +1,7 @@
+/ {
+    behaviors {
+        ks: keyshift {
+            compatible = "zmk,ks";
+        };
+    };
+};
