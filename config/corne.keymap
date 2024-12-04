@@ -31,9 +31,9 @@
 // DONE
                 number_layer {
                         bindings = <
-   &kp KP_N7    &kp KP_N8       &kp KP_N9       &kp PLUS        &kp ASTERISK            &none   &none           &none           &none           &none
-   &kp KP_N4    &kp KP_N5       &kp KP_N6       &kp MINUS       &kp SLASH               &none   &kp RCTRL       &kp RSHFT       &kp RALT        &kp RGUI
-   &kp KP_N1    &kp KP_N2       &kp KP_N3       &kp KP_N0       &kp PERIOD              &none   &none           &none           &none           &none
+   &kp N7       &kp N8          &kp N9          &kp PLUS        &kp ASTERISK            &none   &none           &none           &none           &none
+   &kp N4       &kp N5          &kp N6          &kp MINUS       &kp SLASH               &none   &kp RCTRL       &kp RSHFT       &kp RALT        &kp RGUI
+   &kp N1       &kp N2          &kp N3          &kp N0          &kp PERIOD              &none   &none           &none           &none           &none
                                                         &trans    &trans    &trans   &trans   &trans   &trans
                         >;
                 };
@@ -41,7 +41,7 @@
 // DONE
                 symbol_layer {
                         bindings = <
-   &kp GRAVE    &kp DOLLAR      &kp MINUS       &kp EQUAL       &kp ASTRK       &kp PRCNT       &kp PLUS        &kp UNDER       &kp UGBP        &kp CARET
+   &kp GRAVE    &kp DOLLAR      &kp MINUS       &kp EQUAL       &kp ASTRK       &kp PRCNT       &kp PLUS        &kp UNDER       &kp LS(N3)      &kp CARET
    &mt LGUI LT  &mt LALT LBKT   &mt LSHFT LBRC  &mt LCTRL LPAR  &kp FSLH        &kp BSLH        &mt RCTRL RPAR  &mt RSHFT RBRC  &mt RALT RBKT   &mt RGUI GT
    &kp COLON    &kp AMPS        &kp SQT         &kp EXCL        &kp AT          &kp HASH        &kp QMARK       &kp DQT         &kp PIPE        &kp TILDE
                                                         &trans    &trans    &trans   &trans   &trans   &trans
