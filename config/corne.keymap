@@ -21,8 +21,8 @@
 // DONE
                 default_layer {
                         bindings = <
-   &kp Q        &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI    
-   &mt LGUI A   &mt LALT R      &mt LSHFT S     &mt LCTRL T     &kp G                   &kp M           &mt RCTRL N     &mt RSHFT E     &mt RALT I      &mt RGUI O 
+   &mt LGUI Q   &mt LALT W      &mt LSHFT F     &mt LCTRL P     &kp B                   &kp J           &mt RCTRL L     &mt RSHFT U     &mt RALT Y      &kp SEMI    
+   &kp A        &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &kp O 
    &kp Z        &kp X           &kp C           &kp D           &kp V                   &kp K           &kp H           &kp COMMA       &kp DOT         &kp FSLH
                         &lt 6 ESC    &lt 4 SPACE        &lt 5 TAB       &lt 2 BACKSPACE        &lt 1 ENTER    &lt 3 DELETE
                         >;
@@ -31,8 +31,8 @@
 // DONE
                 number_layer {
                         bindings = <
-   &kp N7       &kp N8          &kp N9          &kp PLUS        &kp ASTERISK            &none   &none           &none           &none           &none
-   &kp N4       &kp N5          &kp N6          &kp MINUS       &kp SLASH               &none   &kp RCTRL       &kp RSHFT       &kp RALT        &kp RGUI
+   &kp N7       &kp N8          &kp N9          &kp PLUS        &kp ASTERISK            &none   &kp RCTRL       &kp RSHFT       &kp RALT        &kp RGUI
+   &kp N4       &kp N5          &kp N6          &kp MINUS       &kp SLASH               &none   &none           &none           &none           &none
    &kp N1       &kp N2          &kp N3          &kp N0          &kp PERIOD              &none   &none           &none           &none           &none
                                                         &trans    &trans    &trans   &trans   &trans   &trans
                         >;
@@ -42,7 +42,7 @@
                 symbol_layer {
                         bindings = <
    &kp GRAVE    &kp DOLLAR      &kp MINUS       &kp EQUAL       &kp ASTRK       &kp PRCNT       &kp PLUS        &kp UNDER       &kp LS(N3)      &kp CARET
-   &mt LGUI LT  &mt LALT LBKT   &mt LSHFT LBRC  &mt LCTRL LPAR  &kp FSLH        &kp BSLH        &mt RCTRL RPAR  &mt RSHFT RBRC  &mt RALT RBKT   &mt RGUI GT
+   &kp LT       &kp LBKT        &kp LBRC        &kp LPAR        &kp FSLH        &kp BSLH        &kp RPAR        &kp RBRC        &kp RBKT        &kp GT
    &kp COLON    &kp AMPS        &kp SQT         &kp EXCL        &kp AT          &kp HASH        &kp QMARK       &kp DQT         &kp PIPE        &kp TILDE
                                                         &trans    &trans    &trans   &trans   &trans   &trans
                         >;
@@ -51,8 +51,8 @@
 // DONE
                 function_layer {
                         bindings = <
-   &kp F7    &kp F8       &kp F9       &kp F12       &none                              &none   &none           &none           &none           &none
-   &kp F4    &kp F5       &kp F6       &kp F11       &kp PRINTSCREEN                    &none   &kp RCTRL       &kp RSHFT       &kp RALT        &kp RGUI
+   &kp F7    &kp F8       &kp F9       &kp F12       &none                              &none   &kp RCTRL       &kp RSHFT       &kp RALT        &kp RGUI
+   &kp F4    &kp F5       &kp F6       &kp F11       &kp PRINTSCREEN                    &none   &none           &none           &none           &none
    &kp F1    &kp F2       &kp F3       &kp F10       &none                              &none   &none           &none           &none           &none
                                                         &trans    &trans    &trans   &trans   &trans   &trans
                         >;
@@ -61,8 +61,8 @@
 // DONE
                 navigation_layer {
                         bindings = <
-   &none        &none           &none           &none           &none           &none           &none           &none           &none           &none
-   &kp LGUI     &kp LALT        &kp LSHFT       &kp LCTRL       &none           &caps_word      &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT
+   &kp LGUI     &kp LALT        &kp LSHFT       &kp LCTRL       &none           &none           &none           &none           &none           &none
+   &none        &none           &none           &none           &none           &caps_word      &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT
    &none        &none           &none           &none           &none           &none           &kp HOME        &kp PG_DN       &kp PG_UP       &kp END
                                                         &trans    &trans    &trans   &trans   &trans   &trans
                         >;
@@ -71,8 +71,8 @@
 // Coming soon
                 mouse_layer {
                         bindings = <
-   &none        &none           &none           &none           &none           &none   &none           &none           &none           &none
    &kp LGUI     &kp LALT        &kp LSHFT       &kp LCTRL       &none           &none   &none           &none           &none           &none
+   &none        &none           &none           &none           &none           &none   &none           &none           &none           &none
    &none        &none           &none           &none           &none           &none   &none           &none           &none           &none
                                                         &trans    &trans    &trans   &trans   &trans   &trans
                         >;
@@ -80,8 +80,8 @@
 
                 media_layer {
                         bindings = <
-   &none        &none           &none           &none           &none           &none   &bt BT_SEL 0            &bt BT_SEL 1            &bt BT_SEL 2            &bt BT_CLR
-   &kp LGUI     &kp LALT        &kp LSHFT       &kp LCTRL       &none           &none   &kp C_PREV              &kp C_PLAY              &kp C_NEXT              &none
+   &kp LGUI     &kp LALT        &kp LSHFT       &kp LCTRL       &none           &none   &bt BT_SEL 0            &bt BT_SEL 1            &bt BT_SEL 2            &bt BT_CLR
+   &none        &none           &none           &none           &none           &none   &kp C_PREV              &kp C_PLAY              &kp C_NEXT              &none
    &none        &none           &none           &none           &none           &none   &kp C_VOL_DN            &kp C_MUTE              &kp C_VOL_UP            &none
                                                         &trans    &trans    &trans   &trans   &trans   &trans
                         >;
