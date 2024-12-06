@@ -24,7 +24,7 @@
    &kp Q        &kp W           &kp F           &kp P           &kp B                   &kp J           &kp L           &kp U           &kp Y           &kp SEMI    
    &mt LGUI A   &mt LALT R      &mt LSHFT S     &mt LCTRL T     &kp G                   &kp M           &mt RCTRL N     &mt RSHFT E     &mt RALT I      &mt RGUI O 
    &kp Z        &kp X           &kp C           &kp D           &kp V                   &kp K           &kp H           &kp COMMA       &kp DOT         &kp FSLH
-   &mt MEDIA ESC    &mt NAVIGATION SPACE        &mt MOUSE TAB       &mt SYMBOL BACKSPACE        &mt NUMBER ENTER    &mt FUNCTION DELETE
+   &mt 6 ESC    &mt 4 SPACE        &mt 5 TAB       &mt 2 BACKSPACE        &mt 1 ENTER    &mt 3 DELETE
                         >;
                 };
 
