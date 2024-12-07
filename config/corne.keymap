@@ -15,6 +15,106 @@
 };
 
 / {
+    behaviors {
+        sym1: grave_caret {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE>, <&kp CARET>;
+            mods = <(MOD_RSFT)>;
+        };
+        sym2: dollar_pound {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOLLAR>, <&kp HASH>;
+            mods = <(MOD_RSFT)>;
+        };
+        sym3: minus_under {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp UNDER>;
+            mods = <(MOD_RSFT)>;
+        };
+        sym4: equal_plus {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&kp PLUS>;
+            mods = <(MOD_RSFT)>;
+        };
+        sym5: asterisk_percent {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp ASTRK>, <&kp PRCNT>;
+            mods = <(MOD_RSFT)>;
+        };
+        sym6: less_greater {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LT>, <&kp GT>;
+            mods = <(MOD_RSFT)>;
+        };
+        sym7: lbracket_rbracket {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT>, <&kp RBKT>;
+            mods = <(MOD_RSFT)>;
+        };
+        sym8: lbrace_rbrace {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBRC>, <&kp RBRC>;
+            mods = <(MOD_RSFT)>;
+        };
+        sym9: lpar_rpar {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LPAR>, <&kp RPAR>;
+            mods = <(MOD_RSFT)>;
+        };
+        sym10: fslash_bslash {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp NUBS>;
+            mods = <(MOD_RSFT)>;
+        };
+        sym11: colon_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COLON>, <&kp TILDE>;
+            mods = <(MOD_RSFT)>;
+        };
+        sym12: ampersand_pipe {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp AMPS>, <&kp PIPE>;
+            mods = <(MOD_RSFT)>;
+        };
+        sym13: singlequote_doublequote {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp DQT>;
+            mods = <(MOD_RSFT)>;
+        };
+        sym14: exclamation_question {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp EXCL>, <&kp QMARK>;
+            mods = <(MOD_RSFT)>;
+        };
+        sym15: at_hash {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp AT>, <&kp BSLH>;
+            mods = <(MOD_RSFT)>;
+        };
+
+    };
+};
+
+&mt {
+    tapping-term-ms = <300>;
+};
+
+/ {
         keymap {
                 compatible = "zmk,keymap";
 
@@ -24,7 +124,7 @@
    &mt LGUI Q   &mt LALT W      &mt LSHFT F     &mt LCTRL P     &kp B                   &kp J           &mt RCTRL L     &mt RSHFT U     &mt RALT Y      &kp SEMI    
    &kp A        &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &kp O 
    &kp Z        &kp X           &kp C           &kp D           &kp V                   &kp K           &kp H           &kp COMMA       &kp DOT         &kp FSLH
-                        &lt 6 ESC    &lt 4 SPACE        &lt 5 TAB       &lt 2 BACKSPACE        &lt 1 ENTER    &lt 3 DELETE
+                        &lt 6 ESC    &lt 4 SPACE        &lt 5 TAB       &lt 2 ENTER        &lt 1 BACKSPACE    &lt 3 DELETE
                         >;
                 };
 
@@ -41,10 +141,10 @@
 // DONE
                 symbol_layer {
                         bindings = <
-   &kp GRAVE    &kp DOLLAR      &kp MINUS       &kp EQUAL       &kp ASTRK       &kp PRCNT       &kp PLUS        &kp UNDER       &kp LS(N3)      &kp CARET
-   &kp LT       &kp LBKT        &kp LBRC        &kp LPAR        &kp FSLH        &kp BSLH        &kp RPAR        &kp RBRC        &kp RBKT        &kp GT
-   &kp COLON    &kp AMPS        &kp SQT         &kp EXCL        &kp AT          &kp HASH        &kp QMARK       &kp DQT         &kp PIPE        &kp TILDE
-                                                        &trans    &trans    &trans   &trans   &trans   &trans
+&sym1   &sym2   &sym3   &sym4   &sym5           &none   &kp RCTRL       &kp RSHFT       &kp RALT        &kp RGUI
+&sym6   &sym7   &sym8   &sym9   &sym10          &none   &none           &none           &none           &none
+&sym11  &sym12  &sym13  &sym14  &sym15          &none   &none           &none           &none           &none
+                &trans    &trans    &trans   &trans   &trans   &trans
                         >;
                 };
 
