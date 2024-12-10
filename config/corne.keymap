@@ -81,19 +81,19 @@
         sym11: colon_tilde {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp COLON>, <&kp TILDE>;
+            bindings = <&kp COLON>, <&kp PIPE>;
             mods = <(MOD_RSFT)>;
         };
         sym12: ampersand_pipe {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp AMPS>, <&kp PIPE>;
+            bindings = <&kp AMPS>, <&kp PIPE2>;
             mods = <(MOD_RSFT)>;
         };
         sym13: singlequote_doublequote {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp SQT>, <&kp DQT>;
+            bindings = <&kp SQT>, <&kp AT>;
             mods = <(MOD_RSFT)>;
         };
         sym14: exclamation_question {
@@ -105,7 +105,7 @@
         sym15: at_hash {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp AT>, <&kp BSLH>;
+            bindings = <&kp DQT>, <&kp BSLH>;
             mods = <(MOD_RSFT)>;
         };
 
