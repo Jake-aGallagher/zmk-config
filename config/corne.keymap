@@ -11,12 +11,6 @@
 #include <behaviors/mouse_keys.dtsi>
 
 / {
-    chosen {
-        zmk,physical-layout = &split_3x5_3;
-    };
-};
-
-/ {
     behaviors {
         sym1: grave_caret {
             compatible = "zmk,behavior-mod-morph";
