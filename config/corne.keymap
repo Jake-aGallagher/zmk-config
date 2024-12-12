@@ -108,39 +108,113 @@
             bindings = <&kp DQT>, <&kp BSLH>;
             mods = <(MOD_RSFT)>;
         };
-
+        num1: 1_F1 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N1>, <&kp F1>;
+            mods = <(MOD_RSFT)>;
+        };
+        num2: 2_F2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N2>, <&kp F2>;
+            mods = <(MOD_RSFT)>;
+        };
+        num3: 3_F3 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N3>, <&kp F3>;
+            mods = <(MOD_RSFT)>;
+        };
+        num4: 4_F4 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N4>, <&kp F4>;
+            mods = <(MOD_RSFT)>;
+        };
+        num5: 5_F5 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N5>, <&kp F5>;
+            mods = <(MOD_RSFT)>;
+        };
+        num6: 6_F6 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N6>, <&kp F6>;
+            mods = <(MOD_RSFT)>;
+        };
+        num7: 7_F7 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N7>, <&kp F7>;
+            mods = <(MOD_RSFT)>;
+        };
+        num8: 8_F8 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N8>, <&kp F8>;
+            mods = <(MOD_RSFT)>;
+        };
+        num9: 9_F9 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N9>, <&kp F9>;
+            mods = <(MOD_RSFT)>;
+        };
+        num0: 0_F10 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp N0>, <&kp F10>;
+            mods = <(MOD_RSFT)>;
+        };
+        num11: MINUS_F11 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp F11>;
+            mods = <(MOD_RSFT)>;
+        };
+        num12: PLUS_F12 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PLUS>, <&kp F12>;
+            mods = <(MOD_RSFT)>;
+        };
+        numPR:  {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&kp PRINTSCREEN>;
+            mods = <(MOD_RSFT)>;
+        };
     };
 };
 
 &mt {
-    tapping-term-ms = <300>;
+    tapping-term-ms = <400>;
 };
 
 / {
         keymap {
                 compatible = "zmk,keymap";
 
-// DONE
                 default_layer {
                         bindings = <
-   &mt LGUI Q   &mt LALT W      &mt LSHFT F     &mt LCTRL P     &kp B                   &kp J           &mt RCTRL L     &mt RSHFT U     &mt RALT Y      &kp SEMI    
+   &mt LGUI Q   &mt LALT W      &mt LSHFT F     &mt LCTRL P     &kp B                   &kp J           &mt RCTRL L     &mt RSHFT U     &mt RALT Y      &mt LGUI SEMI    
    &kp A        &kp R           &kp S           &kp T           &kp G                   &kp M           &kp N           &kp E           &kp I           &kp O 
    &kp Z        &kp X           &kp C           &kp D           &kp V                   &kp K           &kp H           &kp COMMA       &kp DOT         &kp FSLH
-                        &lt 6 ESC    &lt 4 SPACE        &lt 5 TAB       &lt 2 ENTER        &lt 1 BACKSPACE    &lt 3 DELETE
+                        &lt 3 ESC    &kp SPACE        &lt 4 TAB       &lt 2 ENTER        &kp BACKSPACE    &lt 1 DELETE
                         >;
                 };
 
-// DONE
                 number_layer {
                         bindings = <
-   &kp N7       &kp N8          &kp N9          &kp PLUS        &kp ASTERISK            &none   &kp RCTRL       &kp RSHFT       &kp RALT        &kp RGUI
-   &kp N4       &kp N5          &kp N6          &kp MINUS       &kp SLASH               &none   &none           &none           &none           &none
-   &kp N1       &kp N2          &kp N3          &kp N0          &kp PERIOD              &none   &none           &none           &none           &none
+   &kp num7     &kp num8        &kp num9        &kp num12           &kp ASTERISK            &none   &kp RCTRL       &kp RSHFT       &kp RALT        &kp RGUI
+   &kp num4     &kp num5        &kp num6        &kp num11           &kp numPR               &none   &none           &none           &none           &none
+   &kp num1     &kp num2        &kp num3        &kp num0            &kp PERIOD              &none   &none           &none           &none           &none
                                                         &trans    &trans    &trans   &trans   &trans   &trans
                         >;
                 };
 
-// DONE
                 symbol_layer {
                         bindings = <
 &sym1   &sym2   &sym3   &sym4   &sym5           &none   &kp RCTRL       &kp RSHFT       &kp RALT        &kp RGUI
@@ -150,42 +224,21 @@
                         >;
                 };
 
-// DONE
-                function_layer {
-                        bindings = <
-   &kp F7    &kp F8       &kp F9       &kp F12       &none                              &none   &kp RCTRL       &kp RSHFT       &kp RALT        &kp RGUI
-   &kp F4    &kp F5       &kp F6       &kp F11       &kp PRINTSCREEN                    &none   &none           &none           &none           &none
-   &kp F1    &kp F2       &kp F3       &kp F10       &none                              &none   &none           &none           &none           &none
-                                                        &trans    &trans    &trans   &trans   &trans   &trans
-                        >;
-                };
-
-// DONE
-                navigation_layer {
-                        bindings = <
-   &kp LGUI     &kp LALT        &kp LSHFT       &kp LCTRL       &none           &none           &none           &none           &none           &none
-   &none        &none           &none           &none           &none           &caps_word      &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT
-   &none        &none           &none           &none           &none           &none           &kp HOME        &kp PG_DN       &kp PG_UP       &kp END
-                                                        &trans    &trans    &trans   &trans   &trans   &trans
-                        >;
-                };
-
-// Coming soon
-                mouse_layer {
-                        bindings = <
-   &kp LGUI     &kp LALT        &kp LSHFT       &kp LCTRL       &none           &none   &none           &none           &none           &none
-   &none        &none           &none           &none           &none           &none   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT
-   &none        &none           &none           &none           &none           &none   &msc MOVE_LEFT  &msc MOVE_DOWN  &msc MOVE_UP    &msc MOVE_RIGHT
-                                                        &trans    &trans    &trans   &mkp MCLK   &mkp LCLK   &mkp RCLK
-                        >;
-                };
-
                 media_layer {
                         bindings = <
    &kp LGUI     &kp LALT        &kp LSHFT       &kp LCTRL       &none           &none   &bt BT_SEL 0            &bt BT_SEL 1            &bt BT_SEL 2            &bt BT_CLR
    &none        &none           &none           &none           &none           &none   &kp C_PREV              &kp C_PLAY              &kp C_NEXT              &none
    &none        &none           &none           &none           &none           &none   &kp C_VOL_DN            &kp C_MUTE              &kp C_VOL_UP            &none
                                                         &trans    &trans    &trans   &trans   &trans   &trans
+                        >;
+                };
+
+                navigation_layer {
+                        bindings = <
+   &kp LGUI     &kp LALT        &kp LSHFT       &kp LCTRL       &none           &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT
+   &none        &none           &none           &none           &none           &caps_word      &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT
+   &none        &none           &none           &none           &none           &none           &kp HOME        &kp PG_DN       &kp PG_UP       &kp END
+                                                        &trans    &trans    &trans   &mkp MCLK   &mkp LCLK   &mkp RCLK
                         >;
                 };
         };
