@@ -180,7 +180,7 @@
             bindings = <&kp PLUS>, <&kp F12>;
             mods = <(MOD_RSFT)>;
         };
-        numPR:  {
+        numPR: SLASH_PRINT {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp SLASH>, <&kp PRINTSCREEN>;
