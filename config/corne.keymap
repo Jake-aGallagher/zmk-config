@@ -208,9 +208,9 @@
 
                 number_layer {
                         bindings = <
-   &num7    &num8       &num9       &num12          &kp ASTERISK            &none   &kp RCTRL       &kp RSHFT       &kp RALT        &kp RGUI
-   &num4    &num5       &num6       &num11          &numPR                  &none   &none           &none           &none           &none
-   &num1    &num2       &num3       &num0           &kp PERIOD              &none   &none           &none           &none           &none
+   &num12   &num7    &num8       &num9      &kp ASTERISK            &none   &kp RCTRL       &kp RSHFT       &kp RALT        &kp RGUI
+   &num11   &num4    &num5       &num6      &numPR                  &none   &none           &none           &none           &none
+   &num0    &num1    &num2       &num3      &kp PERIOD              &none   &none           &none           &none           &none
                                                         &trans    &trans    &trans   &trans   &trans   &trans
                         >;
                 };
