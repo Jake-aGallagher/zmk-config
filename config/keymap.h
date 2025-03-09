@@ -7,3 +7,4 @@
 #define NAVIGATION 4
 #define MOUSE 5
 #define MEDIA 6
+#define WOT 7
